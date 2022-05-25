@@ -105,8 +105,8 @@ const totalCommitsFetcher = async (username) => {
  */
 async function fetchStats(
   username,
-  count_private = false,
-  include_all_commits = false,
+  count_private = true,
+  include_all_commits = true,
 ) {
   if (!username) throw new MissingParamError(["username"]);
 
